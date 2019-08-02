@@ -1,6 +1,7 @@
 import { Entity, model, property, belongsTo } from '@loopback/repository';
 import { Category } from './category.model';
 import { Composition } from './composition.model';
+import { Rating } from './rating.model';
 
 @model({ settings: {} })
 export class Cocktails extends Entity {
@@ -18,6 +19,9 @@ export class Cocktails extends Entity {
 
   @belongsTo(() => Category)
   categoryId?: string;
+
+  @belongsTo(() => Rating)
+  ratingId: string;
 
   @property({
     type: 'string',
