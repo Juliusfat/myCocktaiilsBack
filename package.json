@@ -58,7 +58,7 @@
     "passport-jwt": "^4.0.0"
   },
   "devDependencies": {
-    "@loopback/build": "^2.0.5",
+    "@loopback/build": "^9.0.6",
     "@loopback/testlab": "^1.7.1",
     "@types/node": "^10.14.13",
     "@types/passport": "^1.0.0",
